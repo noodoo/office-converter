@@ -1,6 +1,6 @@
 'use strict';
 
-var exec = require('child_process').exec;
+var execFile = require('child_process').execFile;
 
 module.exports = function() {
   return {
@@ -17,7 +17,7 @@ module.exports = function() {
   }
 
   function generate(fileName, next, outputType) {
-    exec('unoconv -f ' + outputType + ' "' + fileName +'"', function (error, stdout, stderr) {
+    execFile('unoconv', ['-f', outputType,  fileName], function (error, stdout, stderr) {
       if (error) return next(error);
       var outputFile = (fileName.lastIndexOf('.') > -1 ? fileName.substring(0, fileName.lastIndexOf('.')) : fileName) + '.' + outputType;
       return next(null, {
