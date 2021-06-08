@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vworld4u/office-converter.git"
+    "url": "git+https://github.com/noodoo/office-converter.git"
   },
   "keywords": [
     "office",
@@ -34,12 +34,15 @@
   "author": "vworld4u@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vworld4u/office-converter/issues"
+    "url": "https://github.com/noodoo/office-converter/issues"
   },
-  "homepage": "https://github.com/vworld4u/office-converter#readme",
+  "homepage": "https://github.com/noodoo/office-converter#readme",
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.0.0",
     "sinon": "^11.1.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
