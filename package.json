@@ -1,6 +1,6 @@
 {
   "name": "office-converter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Conversion utility library for Office Files into PDF/HTML using https://github.com/dagwieers/unoconv",
   "main": "index.js",
   "scripts": {
